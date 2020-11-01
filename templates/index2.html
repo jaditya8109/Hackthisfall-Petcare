@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <style>
+        /* landin page css */
+body{
+    background-color: #ECE7E0;
+}
+#landing_page {
+    background-color: #ECE7E0;
+   
+}
+
+.landing_page_content {
+    margin-top: 11vh;
+    padding-bottom: vh;
+}
+
+.landing_head {
+    text-align: right;
+    font-size: 2.5em;
+    padding-bottom: 2vh;
+    color: #3E190A;
+}
+.landing_headd {
+    text-align: right;
+    font-size: 4em;
+    padding-bottom: 2vh;
+    color: #CA7C62;
+}
+
+
+#navbaritems a {
+    font-size: 1.15em;
+    font-weight: 500;
+    color: #3E190A;
+    padding-left: 2em;
+}
+
+.nav_div {
+    padding-top: 3vh;
+}
+.butonn{
+    margin-left: auto;
+}
+.butonn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.butonn{
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 5vh;
+    margin-left: 12vw;
+    color: #3E190A;
+    font-weight: 500;
+    font-size: 1.5em;
+    background-color: #CA7C62;
+}
+.secondpage{
+    margin-bottom: 5vh;
+}
+#aboutus{
+    background-color:  #ECE7E0;
+}
+.aboutuspara{
+    color: #CA7C62;
+    font-size: 1.35em;
+    font-weight: 350;
+    margin-bottom: 7vh;
+}
+.aboutushead{
+    color: #3E190A;
+    margin-bottom: 3vh;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* landin page css */
+    #landingpage_first {
+        order: 2;
+    }
+    #landingpage_second {
+        order: 4;
+    }
+    .landing_head {
+        text-align: center;
+        font-size: 2.5em;
+        padding-bottom: 2vh;
+    }
+    .landing_headd {
+        text-align: center;
+        
+        padding-bottom: 2vh;
+    }
+    .landing_para {
+        text-align: center;
+        font-size: 1.25em;
+        font-weight: 300;
+        padding-bottom: 5vh;
+    }
+    .landing_page_content {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+    .nav_div {
+        padding-top: 1vh;
+    }
+    .arrow_class {
+        padding-bottom: 5vh;
+    }
+    #landing_page {
+        background-image: url("");
+    }
+    .butonn{
+        margin-bottom: 15vh;
+    }
+    .helloji{
+        padding-top:7vh;
+    }
+}
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Predict Breed</title>
+</head>
+<body>
+    <section id="aboutus">
+        <div class="container-fluid nav_div ">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <nav class="navbar navbar-expand-sm navbar-dark">
+                        <a href="#" class="navbar-brand"><img src="https://i.ibb.co/VJ8yHNf/logo1.jpg" alt="STC logo"></a>
+                        <a href="#" class="navbar-brand" style="color:#3E190A; font-weight: bold;" >Pet<span style="color: #CA7C62; font-weight: bold;">Care</span></a>
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbaritems">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbaritems">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a href="/index" class="nav-link">Home </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">About Us</a>
+                                </li>
+                                
+                            </ul>
+                            <ul class="navbar-nav mr-auto">
+                                
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid landing_page_content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-md-1 col-md-5">
+                            <h1 class="aboutushead">About Us</h1>
+                            <p class="aboutuspara">We here at pet care help people Find the breed of their dog and Guide them from their nutrition To Health.</p>
+                            <h1 class="aboutushead">Our Model</h1>
+                            <p class="aboutuspara">It’s a Computer Vision based application of Deep Learning. The neural network model used in the project is ResNet (with Transfer Learning) and a Softmax function at the output layer optimized with Adam Optimizer.</p>
+                            <a href="https://github.com/abhay202/Hackthisfall-Petcare" style="color: #3E190A; font-size: 1.5em; padding-bottom: 10;"><img src="https://i.ibb.co/ryrqZrB/github.png" alt=""></span>&nbsp;Github <span></a>
+                    </div>
+                    <div class="offset-md-1 col-md-4 secondpage">
+                        <img src="https://i.ibb.co/YNv5PxR/dogimage3.png" alt="dog image" style="width: 100%;" class="helloji">
+                    </div>
+                </div>
+            </div>   
+    </section>
+  
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+<footer style="text-align: center; font-size: large; background-color: #3E190A; color: #CA7C62;">
+    <style>.heart{color:#e25555;}</style>
+    Made with <span class="heart">❤</span> by BotArmy  
+</footer>
+</html>
