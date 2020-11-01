@@ -22,4 +22,5 @@ With this project we intend to help people to find the breed of their dog, users
 Model for the resnet50_dog prdtictor model.
 https://drive.google.com/drive/folders/1TwLEEeORrNOuAwU18j9OGev5nq4t3PJy?usp=sharing
 
+all the library can be downloaded from requirements.txt file.
 
