@@ -4,13 +4,13 @@
 Botarmy
 
 **Members**
-Abhay Pratap Singh Sengar
-Aditya Jain
-Aishaan Datt
-Jayesh Singh
+Abhay Pratap Singh Sengar   **https://www.linkedin.com/in/abhay-sengar-8769141a9/**
+Aditya Jain.     **https://www.linkedin.com/in/aditya-jain-479b96157/**
+Aishaan Datt    **https://www.linkedin.com/in/aishaan-datt-b89208190/**
+Jayesh Singh.   **https://www.linkedin.com/in/jayesh-singh-98872b1a1/**
 
 **Technologies Used**
-HTML, CSS, Python, AdobeXD
+HTML, CSS, Python, JS, Heroku, Flask, AdobeXD
 
 **Description**
 Petcare is an ML project based on OpenCV. The neural network model used is RestNet(with transfer learning) and a Softmax function at the output layer optimized with adam optimizer. 
