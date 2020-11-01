@@ -1,0 +1,154 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<script type="text/javascript">
+		function showHide() {
+		  var div = document.getElementById(hidden_div);
+		  if (div.style.display == 'none') {
+			div.style.display = '';
+		  }
+		  else {
+			div.style.display = 'none';
+		  }
+		}
+	   </script>
+	<style>body{
+		overflow-x: hidden;
+		background-color: #ECE7E0;;
+
+	}
+	#navbaritems a {
+		font-size: 1.15em;
+		font-weight: 500;
+		color: #3E190A;
+		padding-left: 2em;
+	}
+	
+	.nav_div {
+		padding-top: 3vh;
+	}
+	#upload{
+		background-color: #ECE7E0;;
+	}
+	
+	.giveborder{
+		border: 1px solid #CA7C62;
+		height: 40vh;
+		margin-top: 15vh;
+		border-radius: 50px;
+		margin-bottom: 10vh;
+	}
+	img{
+		max-width:180px;
+	  }
+	  input[type=file]{
+	  padding:10px;
+	  	}
+	.butonn:hover {
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	  }
+	
+	.butonn{
+		width: 250px;
+		height: 50px;
+		border-radius: 50px;
+		margin-top: 5vh;
+		margin-left: 7vw;
+		color: #3E190A;
+		font-weight: 500;
+		font-size: 1.5em;
+		background-color: #CA7C62;
+		margin-bottom: 11vh;
+	}</style>
+     <!-- CSS -->
+     
+    <title>Upload</title>
+</head>
+<section id="upload">
+	<div class="container-fluid nav_div ">
+		<div class="row justify-content-center">
+			<div class="col-md-10">
+				<nav class="navbar navbar-expand-sm navbar-dark">
+					<a href="#" class="navbar-brand"><img src="https://i.ibb.co/VJ8yHNf/logo1.jpg" alt="STC logo"></a>
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbaritems">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbaritems">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a href="/index" class="nav-link">Home </a>
+							</li>
+							<li class="nav-item">
+								<a href="/about" class="nav-link">About Us</a>
+							</li>
+							
+						</ul>
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a href="#" class="nav-link"> PetCare </a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	 <div class="card" style="width: 100%; height: 100%; align-items: center; background-color: #ECE7E0; border: none;">
+		{% if filename %}
+		<img class="card-img-top" src="{{ url_for('display_image', filename=filename) }}"  width="100%" height="200px">
+		{% endif %}
+		<div class="card-body">
+		  <p class="card-text" style="font-size:3rem; color: #3E190A !important; ">{% with messages = get_flashed_messages() %}
+			{% if messages %}
+			  <ul class=flashes>
+			  {% for message in messages %}
+				<p style="font-size:2rem;  color: #3E190A !important; ">{{ message }}</p>
+			  {% endfor %}
+			   </ul> 
+			{% endif %}
+		  {% endwith %}</p>
+		</div>
+	  </div>
+	<div class="containe-fluid">
+		<div class="row justify-content-center ">
+			<div class="col-md-4 giveborder">
+				<div class="row justify-content-center">
+					<img src="https://i.ibb.co/kmsJXkL/imageimage.png" alt="b" style="margin-bottom: 5vh; margin-top: 5vh;">
+				</div>
+				<div class="row justify-content-center">
+					 <h3 class="text-center">Upload your dog's image </h3>
+					 </div>
+					 
+
+
+<!-- <p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p> -->
+<!-- {% if filename %}
+	<div>
+		<img src="{{ url_for('display_image', filename=filename) }}" width="100%" height="100%">
+	</div>
+{% endif %} -->
+
+ 
+<form method="post" action="/" enctype="multipart/form-data" onsubmit="showHide(); return false;">
+	
+    <dl>
+		<p>
+			<input style="margin-left:25%" type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" class="butonn" value="Submit">
+	</p>
+</form>

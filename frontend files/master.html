@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Disasters</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <style>
+        /* landin page css */
+body{
+    background-color: #ECE7E0;
+}
+#landing_page {
+    background-color: #ECE7E0;
+   
+}
+
+.landing_page_content {
+    margin-top: 11vh;
+    padding-bottom: vh;
+}
+
+.landing_head {
+    text-align: right;
+    font-size: 2.5em;
+    padding-bottom: 2vh;
+    color: #3E190A;
+}
+.landing_headd {
+    text-align: right;
+    font-size: 4em;
+    padding-bottom: 2vh;
+    color: #CA7C62;
+}
+
+
+#navbaritems a {
+    font-size: 1.15em;
+    font-weight: 500;
+    color: #3E190A;
+    padding-left: 2em;
+}
+
+.nav_div {
+    padding-top: 3vh;
+}
+.butonn{
+    margin-left: auto;
+}
+.butonn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.butonn{
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 5vh;
+    margin-left: 12vw;
+    color: #3E190A;
+    font-weight: 500;
+    font-size: 1.5em;
+    background-color: #CA7C62;
+}
+.secondpage{
+    margin-bottom: 5vh;
+}
+#aboutus{
+    background-color:  #ECE7E0;
+}
+.aboutuspara{
+    color: #CA7C62;
+    font-size: 1.35em;
+    font-weight: 350;
+    margin-bottom: 7vh;
+}
+.aboutushead{
+    color: #3E190A;
+    margin-bottom: 3vh;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* landin page css */
+    #landingpage_first {
+        order: 2;
+    }
+    #landingpage_second {
+        order: 4;
+    }
+    .landing_head {
+        text-align: center;
+        font-size: 2.5em;
+        padding-bottom: 2vh;
+    }
+    .landing_headd {
+        text-align: center;
+        
+        padding-bottom: 2vh;
+    }
+    .landing_para {
+        text-align: center;
+        font-size: 1.25em;
+        font-weight: 300;
+        padding-bottom: 5vh;
+    }
+    .landing_page_content {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+    .nav_div {
+        padding-top: 1vh;
+    }
+    .arrow_class {
+        padding-bottom: 5vh;
+    }
+    #landing_page {
+        background-image: url("");
+    }
+    .butonn{
+        margin-bottom: 15vh;
+    }
+    .helloji{
+        padding-top:7vh;
+    }
+    footer {
+    position: relative;
+	background-color:#060604;
+    margin-top: 150px;
+  }
+
+  .footer-text {
+    text-align: justify;
+    color: #fff;
+	padding: 10px;
+	font-size: 2.0rem;
+  }
+
+  .footer-logo {
+    margin-bottom: 30px;
+    padding-left: 10px;
+  }
+
+  footer>div>h1 {
+    margin-bottom: 20px;
+  }
+
+  .footer-list {
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .footer-list>li>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  footer>.container>h1 {
+    color: #fff;
+  }
+
+
+  footer>div>h3 {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .footer-img {
+    padding-top: 40px;
+    width: 200px;
+  }
+
+  .footer-list:nth-child(1) {
+    width: 70.91px;
+  }
+
+  .footer-hr {
+    margin-top: 14px;
+    width: 100%;
+    border-top: solid 1px #fff;
+    overflow: hidden;
+  }
+
+  footer>.container>.container {
+    text-align: center;
+  }
+
+
+  .footer-contain>.row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-col {
+    padding: 0;
+    width: auto;
+    margin: 0 auto;
+  }
+
+}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <section id="landing_page">
+        <div class="container-fluid nav_div ">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <nav class="navbar navbar-expand-sm navbar-dark">
+                        <a href="#" class="navbar-brand"><img src="https://i.ibb.co/VJ8yHNf/logo1.jpg" alt="STC logo"></a> 
+                 
+                        
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbaritems"> 
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbaritems">
+                            <ul class="navbar-nav ml-auto" style="margin-left: 0;">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Home </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/about" class="nav-link">About Us</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> PetCare </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid landing_page_content">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-12 align-self-center" id="landingpage_second" style="padding-bottom: 13vh;">
+                    <img src="https://i.ibb.co/TrgMzrz/dog-image2.png" alt="landing illustration" style="width: 100%;">
+                </div>
+                <div class="col-md-5 col-sm-12" id="landingpage_first">
+                    <h3 class="landing_head">Hey There!</h3>
+                    <h1 class="landing_headd">Want to know about your dog?</h1>
+                        <!-- <button type="submit" class="btn btn-lg btn-success"> Go </button> -->
+                        <form action="/go" method="GET">
+                            <button class="butonn text-center" >Find Out</button>
+                            </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        {% block message %}
+        {% endblock %}
+    </div>
+</div>
+
+<script type="text/javascript">
+    const graphs = {{graphJSON | safe}};
+    const ids = {{ids | safe}};
+    for(let i in graphs) {
+        Plotly.plot(ids[i], graphs[i].data, graphs[i].layout);
+    }
+</script>
+
+</body>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <!-- Logo and Text -->
+        <div class="row">
+            <a href="/" class="footer-logo"><img src="./img/logo2.jpeg" class="footer-img" alt="logo"></a>
+            <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        
+        
+        <!-- HR -->
+        <hr class="footer-hr" style="color: #fff!important;">
+        <!-- Copyright and Social Links -->
+        <div class="container">
+            
+                <div class="col-lg-12 col-md-12 legend" style="align-items: center;">
+      <p  style="align-items: center; color:#3E190A; margin-top: 30px; font-size: 2rem;">
+        Made with ❤ &nbsp;by <a href="./" style="color:#CA7C62; text-decoration: none;">Botarmy</a>
+    </p>
+                </div>
+        
+            
+        </div>
+</footer>
+<!-- Footer End -->
+</html>
